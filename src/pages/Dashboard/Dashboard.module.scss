@@ -1,0 +1,57 @@
+.dashboardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px;
+}
+
+.assetIconContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tabContainer {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: max-content;
+}
+
+.suggestionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 16px;
+}
+
+.suggestionTitle {
+font-family: "Plus Jakarta Sans";
+font-size: 16px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: -0.007em;
+text-align: left;
+}
+
+.customOptionsContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 27px;
+}
+
+.regionContainer {
+  display: flex;
+  align-items: center;  
+}
+
+.portfolioTitle {
+font-family: "Plus Jakarta Sans";
+font-size: 18px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: -0.008em;
+text-align: left;
+color:#475569
+}

@@ -1,0 +1,49 @@
+.globalButton {
+    outline: none;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans";
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 13px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.006em;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+    flex-grow: 1;
+
+  }
+  
+  .active {
+    @extend .globalButton;
+    color: #4F46E5; 
+    border: 1px solid #4F46E5;
+    background-color: #ffffff;
+  
+    .icon {
+      fill: #4F46E5;
+    }
+  }
+  
+  .inactive {
+    @extend .globalButton;
+    color: #475569;
+    border: 1px solid transparent;
+    background-color: transparent;
+  
+    .icon {
+      fill: #475569;
+    }
+  
+    &:hover {
+      background-color: #f0f0f0; 
+    }
+  }
+  
+  .label {
+    margin-left: 8px;
+  }
+  

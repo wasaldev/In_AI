@@ -1,0 +1,28 @@
+.tabPill {
+  display: inline-block;
+  padding: 8px 12px 8px 12px;
+  gap: 8px;
+  border-radius: 12px;
+  opacity: 0px;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.006em;
+}
+
+.activeTab {
+  @extend .tabPill;
+  background-color: #eef2ff;
+  color: #4F46E5;
+}
+
+.inactiveTab {
+  @extend .tabPill;
+  background-color: transparent;
+  color: #475569;
+
+  &:hover {
+    background-color: #ffffff;
+  }
+}
