@@ -24,6 +24,10 @@
   color: #ffffff;
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 
   &:hover {
     background-color: #3a46d2;
@@ -36,6 +40,9 @@
   color: #475569;
   border: 1px solid #d1d5db;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     background-color: #f0f0f0;
@@ -45,4 +52,37 @@
 .icon {
   margin-right: 8px;
   transition: fill 0.3s ease;
+}
+
+
+@media only screen and (max-width: 420px){
+  .button {
+  
+    font-family: "Plus Jakarta Sans";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.006em;
+    flex-grow: 1;
+    padding: 8px 16px;
+  
+  }
+ 
+
+}
+
+@media only screen and (max-width: 360px){
+  .button {
+  
+    font-family: "Plus Jakarta Sans";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.006em;
+    flex-grow: 1;
+    padding: 8px 12px;
+  
+  }
+ 
+
 }

@@ -1,13 +1,60 @@
+.dashboard {
+  display: flex;
+}
+
+.dashboardHeader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .dashboardContainer {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 12px;
+  padding: 36px;
+  background-color: #f8fafc;
+  margin-left: 250px;
+}
+
+.dashboardContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contentHeading {
+  color: #1e293b;
+  font-family: "Plus Jakarta Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.buttonHeading {
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.dashboardContentButton {
+  display: flex;
+  max-width: 336px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  gap: 10px;
+  background-color: #1e293b;
+  border-radius: 50px;
 }
 
 .assetIconContainer {
   display: flex;
   align-items: center;
+  width: 100%;
   gap: 8px;
 }
 
@@ -20,18 +67,14 @@
 
 .suggestionContainer {
   display: flex;
-  flex-direction: column;
-  align-items: left;
-  gap: 16px;
+  gap: 28px;
 }
 
 .suggestionTitle {
-font-family: "Plus Jakarta Sans";
-font-size: 16px;
-font-weight: 700;
-line-height: 22px;
-letter-spacing: -0.007em;
-text-align: left;
+  font-family: "Plus Jakarta Sans";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 22px;
 }
 
 .customOptionsContainer {
@@ -43,15 +86,184 @@ text-align: left;
 
 .regionContainer {
   display: flex;
-  align-items: center;  
+  align-items: center;
+  gap: 20px;
 }
 
 .portfolioTitle {
-font-family: "Plus Jakarta Sans";
-font-size: 18px;
-font-weight: 700;
-line-height: 24px;
-letter-spacing: -0.008em;
-text-align: left;
-color:#475569
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.008em;
+  text-align: left;
+  color: #475569;
+  margin-bottom: 25px;
+}
+
+.assetsContainer {
+  margin-top: 32px;
+  display: flex;
+  gap: 30px;
+}
+.assetsBlock1 {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.assetsBlock2 {
+  width: 60%;
+  border-radius: 24px;
+  border: 1px solid #e2e8f0;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.assetsHeading {
+  margin-bottom: 9px;
+  color: #475569;
+  font-family: "Plus Jakarta Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+.assetsContent {
+  color: #64748b;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.portfolioConatiner {
+  margin-top: 32px;
+  display: flex;
+  gap: 30px;
+}
+.portfolioBlock {
+  width: 60%;
+  padding: 32px;
+  border-radius: 24px;
+  border: 1px solid #e2e8f0;
+}
+
+.queriesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-block: 40px;
+}
+.queriesHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.heroHeader {
+  color: var(--Gray-80, #1e293b);
+  font-family: "Plus Jakarta Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.heroButton {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.buttonContent {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #1e293b;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .assetsContainer {
+    margin-top: 32px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .assetsBlock1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .assetsBlock2 {
+    width: 93%;
+    border-radius: 24px;
+    border: 1px solid #e2e8f0;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolioConatiner {
+    margin-top: 32px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .portfolioBlock {
+    width: 93%;
+    padding: 32px;
+    border-radius: 24px;
+    border: 1px solid #e2e8f0;
+  }
+  .suggestionContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .dashboardContainer {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .assetsBlock2 {
+    display: none;
+  }
+  .portfolioBlock {
+    width: 85%;
+    padding: 32px;
+    border-radius: 24px;
+    border: 1px solid #e2e8f0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .dashboardContainer {
+    padding: 16px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .portfolioBlock {
+    width: 80%;
+  }
 }

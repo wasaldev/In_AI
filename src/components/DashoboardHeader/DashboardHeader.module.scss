@@ -1,0 +1,78 @@
+
+.heroSection{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  
+  }
+  
+  .heroContent{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .heroHeader{
+    color: var(--Gray-80, #1E293B);
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    width: 100%;
+  }
+  
+  .heroButton{
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+  }
+  .icon{
+    cursor: pointer;
+  }
+  
+  .buttonContent{
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    background-color: #1E293B;
+    border-radius: 50px;
+  }
+
+  .dashboardContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .contentHeading{
+    color: #1E293B;
+    font-family: "Plus Jakarta Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;;
+  }
+  
+    .buttonHeading{
+      color:  #FFF;
+      font-family: "Plus Jakarta Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+  
+    }
+  
+    .dashboardContentButton{
+      display: flex;
+      max-width: 336px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      gap:10px;
+      background-color: #1E293B;
+      border-radius: 50px;
+    }
+  
+
